@@ -1,0 +1,47 @@
+
+body,html,#container,.controllerTopDiv{
+    height: 100%;
+    margin: 0px
+}
+
+.keyword {
+    width: 600px;
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    right: 500px
+}
+
+.newOrSavePosition {
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    right: 20px
+}
+.newOrSavePosition .positionName {
+    width: 500px;
+    position: absolute;
+    z-index: 100;top: 60px;
+    right: 0}
+.newOrSavePosition .positionDescription {
+    width: 500px;
+    position: absolute;
+    z-index: 100;top: 100px;
+    right: 0}
+
+
+.clickPosition {
+    width: 300px;
+    position: absolute;
+    z-index: 100;
+    bottom: 60px;
+    right: 20px
+}
+
+.positionAddress {
+    width: 600px;
+    position: absolute;
+    z-index: 100;
+    bottom: 20px;
+    right: 20px
+}
