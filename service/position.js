@@ -1,13 +1,10 @@
-/**
- * Created by David on 2016-08-17.
- */
-//var sql = require('mssql');
+
 var sql = require('mysql');
 var connection = sql.createConnection({
     host:'localhost',
     user:'root',
     password:'zhang123',
-    database:'cainiao'
+    database:'test'
 });
 connection.connect();
 /**
@@ -35,29 +32,6 @@ exports.getAllMarker = function(req,res) {
         });
         console.log("rowsss",new_1);
         res.send({retCode:1,data:new_1});
-    })
-
-};
-//网点
-exports.getAllMarker2 = function(req,res) {
-    console.log('获取所有标记点服务器端');
-    console.log(req.body);
-
-    var con = connection.query("select * from new_2",function(err,result,fields){
-        if(err){
-            throw err;
-        }
-        var new_2 = [];
-        result.forEach(function (item) {
-            var new_1item = {
-                spot_id: item.spot_id,
-                lng: item.lng,
-                lat: item.lat
-            };
-            new_1.push(new_1item);
-        });
-        console.log("rowsss",new_2);
-        res.send({retCode:1,data:new_2});
     })
 
 };
