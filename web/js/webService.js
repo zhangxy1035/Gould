@@ -8,8 +8,15 @@ angular.module('PCFactory',[])
                     success(data);
                 });
         };
+        var getAllMarker4 = function (query,success) {
+            $http.post(CONFIG.host + '/getAllMarker4',query)
+                .success(function(data){
+                    success(data);
+                });
+        };
 
         return {
-            getAllMarker : getAllMarker
+            getAllMarker : getAllMarker,
+            getAllMarker4:getAllMarker4
         };
     });

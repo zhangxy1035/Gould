@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, '../web')));
 
 app.use(express.static(path.join(__dirname, '../app')));
 app.post('/getAllMarker',position.getAllMarker);
-
+app.post('/getAllMarker4',position.getAllMarker4);
 app.listen(app.get('port'),function(){
     console.log('成功开启node,端口号:'+app.get('port'));
 });
